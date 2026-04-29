@@ -6,12 +6,13 @@
     <title>Midnight of Vein | Gothic Hack & Slash</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         /* Tipografías base */
         :root {
-            --gothic-font: 'UnifrakturMaguntia', cursive;
-            --mono-font: 'Share Tech Mono', monospace;
+            --gothic-font: 'Cinzel', serif;
+            --body-font: 'Inter', sans-serif;
+            --accent-font: 'Space Grotesk', sans-serif;
             --blood-red: #8a0303;
             --cyber-cyan: #00f3ff;
             --dark-purple: #1a002e;
@@ -19,7 +20,7 @@
         }
     </style>
 </head>
-<body class="bg-black text-white overflow-x-hidden font-['Share_Tech_Mono']">
+<body class="bg-black text-white overflow-x-hidden font-['Inter']">
     <!-- Overlay CRT Scanlines -->
     <div class="fixed inset-0 pointer-events-none z-50 opacity-10 scanlines"></div>
 
@@ -28,13 +29,13 @@
         <div class="text-2xl font-bold tracking-tighter gothic-text text-red-600 hover:text-cyan-400 transition-colors cursor-pointer">
             MIDNIGHT OF VEIN
         </div>
-        <nav class="hidden md:flex space-x-8 text-xs tracking-[0.2em]">
+        <nav class="hidden md:flex space-x-8 text-xs tracking-[0.2em] font-['Space_Grotesk']">
             <a href="#about" class="hover:text-red-500 transition-colors">THE WORLD</a>
             <a href="#mechanics" class="hover:text-red-500 transition-colors">GAMEPLAY</a>
             <a href="#gallery" class="hover:text-red-500 transition-colors">VISUALS</a>
             <a href="#" class="px-4 py-1 border border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-black transition-all">PLAY_DEMO</a>
         </nav>
-        <div class="md:hidden text-cyan-500 text-xl">
+        <div class="md:hidden text-cyan-500 text-xl font-['Space_Grotesk']">
             [MENU]
         </div>
     </header>
@@ -45,13 +46,13 @@
             <div class="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center opacity-30 grayscale sepia brightness-50 contrast-125"></div>
             <div class="absolute inset-0 z-1 bg-gradient-to-b from-black via-transparent to-black"></div>
             
-            <h1 class="relative z-10 text-6xl md:text-9xl font-bold gothic-text chrome-text mb-4 glitch" data-text="MIDNIGHT OF VEIN">
+            <h1 class="relative z-10 text-6xl md:text-9xl font-black gothic-text chrome-text mb-4 glitch" data-text="MIDNIGHT OF VEIN">
                 MIDNIGHT OF VEIN
             </h1>
-            <p class="relative z-10 text-lg md:text-2xl text-cyan-400 mb-8 tracking-widest uppercase">
+            <p class="relative z-10 text-lg md:text-2xl text-cyan-400 mb-8 tracking-widest uppercase font-['Space_Grotesk']">
                 Hack & Slash | 2D/3D Platforms | Gothic Puzzles
             </p>
-            <div class="relative z-10 flex flex-col md:flex-row gap-6">
+            <div class="relative z-10 flex flex-col md:flex-row gap-6 font-['Space_Grotesk']">
                 <button class="y2k-btn bg-red-700 text-white px-10 py-4 font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(138,3,3,0.6)]">
                     Descender al Abismo
                 </button>
@@ -64,7 +65,7 @@
         <!-- About Section -->
         <section id="about" class="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div class="y2k-window border-2 border-white/20 p-1 bg-white/5 backdrop-blur-sm">
-                <div class="bg-white/10 px-4 py-2 flex justify-between items-center border-b border-white/20">
+                <div class="bg-white/10 px-4 py-2 flex justify-between items-center border-b border-white/20 font-['Space_Grotesk']">
                     <span class="text-xs">SYSTEM_REPORT_04.txt</span>
                     <div class="flex gap-2">
                         <div class="w-3 h-3 border border-white/40"></div>
@@ -73,11 +74,11 @@
                     </div>
                 </div>
                 <div class="p-8 space-y-6">
-                    <h2 class="text-3xl font-bold gothic-text text-red-600 italic">Despierta, Progenie...</h2>
-                    <p class="text-gray-400 leading-relaxed">
+                    <h2 class="text-4xl font-bold gothic-text text-red-600">Despierta, Progenie...</h2>
+                    <p class="text-gray-300 leading-relaxed text-lg">
                         En las profundidades de la vena del mundo, la sangre es la única moneda. "Midnight of Vein" te sumerge en una pesadilla gótica donde las leyes de la física se retuercen entre dimensiones 2D y 3D.
                     </p>
-                    <p class="text-gray-400 leading-relaxed">
+                    <p class="text-gray-300 leading-relaxed text-lg">
                         Encarna al heraldo olvidado, domina el combate visceral y resuelve los acertijos arcanos que protegen el núcleo del castillo de cristal. El Y2K no fue el fin del mundo, fue solo el despertar de algo mucho más antiguo.
                     </p>
                 </div>
@@ -85,7 +86,7 @@
             <div class="relative aspect-square">
                 <div class="absolute inset-0 border-4 border-cyan-500/30 animate-pulse"></div>
                 <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=2094&auto=format&fit=crop" alt="Game Concept" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 brightness-75">
-                <div class="absolute bottom-4 right-4 bg-black text-cyan-400 p-4 border border-cyan-500/50">
+                <div class="absolute bottom-4 right-4 bg-black text-cyan-400 p-4 border border-cyan-500/50 font-['Space_Grotesk']">
                     <span class="text-4xl font-bold">3D/2D</span>
                     <p class="text-[10px]">DIMENSIONAL_SHIFT_READY</p>
                 </div>
@@ -103,19 +104,19 @@
                 <div class="group border border-white/10 p-8 hover:bg-red-950/20 hover:border-red-600 transition-all duration-500">
                     <div class="text-red-600 text-5xl mb-6">⚔</div>
                     <h3 class="text-2xl font-bold mb-4 gothic-text">Hack & Slash</h3>
-                    <p class="text-sm text-gray-500">Combate fluido y visceral. Encadena combos de sangre y utiliza tus habilidades vampíricas para despedazar legiones de sombras.</p>
+                    <p class="text-sm text-gray-400">Combate fluido y visceral. Encadena combos de sangre y utiliza tus habilidades vampíricas para despedazar legiones de sombras.</p>
                 </div>
                 <!-- Platforming -->
                 <div class="group border border-white/10 p-8 hover:bg-cyan-950/20 hover:border-cyan-400 transition-all duration-500">
                     <div class="text-cyan-400 text-5xl mb-6">⇅</div>
                     <h3 class="text-2xl font-bold mb-4 gothic-text">Shift Dimensional</h3>
-                    <p class="text-sm text-gray-500">Cambia entre la perspectiva 2D y 3D en tiempo real para navegar por estructuras imposibles y abismos infinitos.</p>
+                    <p class="text-sm text-gray-400">Cambia entre la perspectiva 2D y 3D en tiempo real para navegar por estructuras imposibles y abismos infinitos.</p>
                 </div>
                 <!-- Puzzles -->
                 <div class="group border border-white/10 p-8 hover:bg-purple-950/20 hover:border-purple-500 transition-all duration-500">
                     <div class="text-purple-500 text-5xl mb-6">♅</div>
                     <h3 class="text-2xl font-bold mb-4 gothic-text">Puzzles Arcanos</h3>
-                    <p class="text-sm text-gray-500">Manipula la arquitectura del castillo. Solo los más perspicaces sobrevivirán a las trampas de los antiguos maestros.</p>
+                    <p class="text-sm text-gray-400">Manipula la arquitectura del castillo. Solo los más perspicaces sobrevivirán a las trampas de los antiguos maestros.</p>
                 </div>
             </div>
         </section>
@@ -142,13 +143,13 @@
 
     <footer class="bg-zinc-900 border-t border-red-900/50 py-12 px-6 text-center">
         <div class="gothic-text text-3xl mb-8 text-gray-500">MIDNIGHT OF VEIN</div>
-        <div class="flex justify-center space-x-6 mb-8 text-sm">
+        <div class="flex justify-center space-x-6 mb-8 text-sm font-['Space_Grotesk']">
             <a href="#" class="hover:text-cyan-400">INSTAGRAM</a>
             <a href="#" class="hover:text-cyan-400">DISCORD</a>
             <a href="#" class="hover:text-cyan-400">STEAM</a>
             <a href="#" class="hover:text-cyan-400">TWITTER / X</a>
         </div>
-        <p class="text-[10px] text-gray-600 tracking-widest uppercase">
+        <p class="text-[10px] text-gray-600 tracking-widest uppercase font-['Space_Grotesk']">
             © 2026 VEIN STUDIOS - TODOS LOS DERECHOS RESERVADOS_ <br>
             STAY VAMP_ STAY Y2K_
         </p>

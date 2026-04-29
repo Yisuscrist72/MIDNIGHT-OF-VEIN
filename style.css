@@ -1,8 +1,13 @@
 /* Custom Styles for Midnight of Vein */
 
-/* Gothic Text */
+/* Font Classes */
 .gothic-text {
-    font-family: 'UnifrakturMaguntia', cursive;
+    font-family: var(--gothic-font);
+    letter-spacing: 0.05em;
+}
+
+.accent-text {
+    font-family: var(--accent-font);
 }
 
 /* Chrome Text Effect (Y2K) */
@@ -65,7 +70,6 @@
     10% { clip: rect(29px, 9999px, 83px, 0); }
     15% { clip: rect(16px, 9999px, 91px, 0); }
     20% { clip: rect(2px, 9999px, 23px, 0); }
-    /* ... rest of the animation frames will be simplified ... */
     100% { clip: rect(67px, 9999px, 62px, 0); }
 }
 
